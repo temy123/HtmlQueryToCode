@@ -1,71 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Main</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <style>
-      * {
-        box-sizing: border-box;
+<head>
+  <title>Main</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <script src="js/main.js"></script>
+</head>
+
+<body style="padding: 16px">
+  <div style="margin-bottom: 12px;">
+    <button id="btn_cookie" type="button" class="btn btn-primary">쿠키 파싱하기</button>
+    <script>
+      document.getElementById('btn_cookie').onclick = (event) => {
+        location.href = 'cookie.html'
       }
-    </style>
-    <script src="js/main.js"></script>
-  </head>
-  <body style="padding: 16px">
-    <div style="display: flex; width: 500px; border: solid 1px black">
-      <textarea
-        name="source"
-        id="source"
-        cols="30"
-        rows="10"
-        style="flex-basis: 80%; height: 400px"
-      >
+    </script>
+  </div>
+
+
+  <div style="display: flex; width: 500px; border: solid 1px black">
+    <textarea name="source" id="source" cols="30" rows="10" style="flex-basis: 80%; height: 400px">
       </textarea>
-      <button
-        id="submit"
-        value="submit"
-        style="flex-basis: 20%; outline: none; border: none"
-      >
-        submit
-      </button>
-    </div>
-    <div style="display: flex; width: 500px; border: solid 1px black">
-      <textarea
-        name="result"
-        id="result"
-        cols="30"
-        rows="10"
-        style="flex-basis: 80%; height: 400px"
-      ></textarea>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <button id="submit" value="submit" style="flex-basis: 20%; outline: none; border: none">
+      submit
+    </button>
+  </div>
+  <div style="display: flex; width: 500px; border: solid 1px black">
+    <textarea name="result" id="result" cols="30" rows="10" style="flex-basis: 80%; height: 400px"></textarea>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

@@ -1,5 +1,3 @@
-console.log("test");
-
 window.onload = function () {
   var source_box = document.getElementById("source");
   var result_box = document.getElementById("result");
